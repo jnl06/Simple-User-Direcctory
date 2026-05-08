@@ -33,7 +33,7 @@ function App() {
       <div className='users'>
         {user.slice(0,5).map((user) => (
           <div className='details' key={user.id}>
-            <h4>{user.name}</h4>
+            <h3>{user.name}</h3>
             <p>Email: {user.email}</p>
             <p>Company Name: {user.company.name}</p>
           </div>
