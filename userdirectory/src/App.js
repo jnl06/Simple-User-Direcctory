@@ -29,7 +29,8 @@ function App() {
 
   return (
     <div>
-      <h1>USERS</h1>
+      <h1>Simple User Directory</h1>
+      <h2>USERS:</h2>
       <div className='users'>
         {user.slice(0,5).map((user) => (
           <div className='details' key={user.id}>
