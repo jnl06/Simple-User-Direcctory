@@ -24,8 +24,20 @@ function App() {
     fetchUsers();
   }, []);
 
-  if (loading) <p>Loading...</p>;
-  if (error) <p>Failed to fetch users {error.message}</p>;
+  if (loading)
+    return (
+      <div className="message">
+        <h2>Loading users...</h2>
+      </div>
+    );
+
+  if (error)
+    return (
+      <div className="message">
+        <h2>{error}</h2>
+      </div>
+    );
+    
 
   return (
     <div>
